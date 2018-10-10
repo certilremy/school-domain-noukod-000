@@ -1,5 +1,4 @@
 
-
 class School(name)
 end
 
