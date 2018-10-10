@@ -1,6 +1,6 @@
 
 
-class School
+class School(name)
 
 
   def initialized(name)
