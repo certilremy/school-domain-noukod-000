@@ -1,16 +1,29 @@
-
-
 class School
 
+  attr_accessor :roster
 
-  def initialized(name)
-    @name=name
-
+  def initialize(school_name)
+    @roster={}
   end
 
-  def name
-    @name
- end
+  def add_student(number,name)
+    if(@roster[name]==nil)
+      @roster[name] = []
+      @roster[name] << number
+    else
+      @roster[name] << number
+    end
+  end
+
+  def grade(grade)
+    @roster[grade]
+  end
+
+  def sort
+  @roster.each do |stud, gr|
+    gr.sort!
+  end
+  @roster
 end
 
-school = School.new("Bayside High School")
+end
