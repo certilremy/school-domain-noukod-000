@@ -1,14 +1,18 @@
+school = School.new("Bayside High School")
+
+
+
 # code here!
 
-class School
+#class School
 
 
-  def initialized(name)
-    @name=name
+  #def initialized(name)
+    #@name=name
 
-  end
+  #end
 
-  def name
-    @name
-  end
-end
+  #def name
+    #@name
+#  end
+#end
